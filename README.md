@@ -2,6 +2,10 @@
 
 ## Release-Kraken - Multi-purpose DevOps Automation Tool
 
+
+
+### Release Page Generator
+
 ![rk-page-gen](./docs/release_page_generator.drawio.png)
 https://github.com/drmonkeysee/ecs-scheduler = runs on cron
 
@@ -15,9 +19,9 @@ use python requests & bs4
 
 auto-updates every 30 mins
 
-### Release Page Generator
-
 ### Cloudwatch Alerter
+
+[rk-alerter](./docs/rk_sqs_alerter.drawio.png)
 
 ### Terraform Module Manger
 
@@ -29,3 +33,4 @@ auto-updates every 30 mins
 
 ### Bamboo Permission Enforcer
 
+### Grafana visualiser
