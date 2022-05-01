@@ -21,7 +21,7 @@ auto-updates every 30 mins
 
 ### Cloudwatch Alerter
 
-[rk-alerter](./docs/rk_sqs_alerter.drawio.png)
+![rk-alerter](./docs/rk_sqs_alerter.drawio.png)
 
 ### Terraform Module Manger
 
