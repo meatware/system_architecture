@@ -1,6 +1,7 @@
 # System Architecture Examples
 
-## Release-Kraken - A Centralised Multi-purpose DevOps Monitoring & Automation Suite of Tools
+## Release-Kraken
+### A Centralised Multi-purpose DevOps Monitoring & Automation Suite of Tools
 
 
 
@@ -24,6 +25,8 @@ auto-updates every 30 mins
 ![rk-alerter](./docs/rk_sqs_alerter.drawio.png)
 
 ### Terraform PR Enforcer
+
+![rk-pr-enforcer](./docs/rk_terraform_pr_enforcer.drawio.png)
 
 
 ### Terraform Module Manger
