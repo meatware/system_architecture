@@ -1,6 +1,6 @@
 # System Architecture Examples
 
-## Release-Kraken - Multi-purpose DevOps Automation Tool
+## Release-Kraken - A Centralised Multi-purpose DevOps Monitoring & Automation Suite of Tools
 
 
 
