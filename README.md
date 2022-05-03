@@ -30,10 +30,13 @@ auto-updates every 30 mins
 
 
 ### Terraform Module Manger
+TBD
 
 ### ECR Security Scanner
+TBD
 
 ### Bamboo Permission Enforcer
+TBD
 
 ### Grafana visualiser
 
@@ -42,7 +45,7 @@ auto-updates every 30 mins
 
 
 ### EC2 Tag Enforcer
-
+TBD
 
 
 
