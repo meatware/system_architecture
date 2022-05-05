@@ -1,10 +1,12 @@
 # System Architecture Examples
 
 ## Release-Kraken
-### A Centralised Multi-purpose DevOps Monitoring & Automation Suite of Tools
+#### A Centralised Multi-purpose DevOps Monitoring & Automation Suite of Tools
+
+The release-kraken suite of tools was developed for a variety of different tasks and was used internally to improve IaC and the release process. Dockerised code was deployed to ECS to run as long running services or 'run-once' tasks.
 
 
-
+---
 ### Release Page Generator
 
 ![rk-page-gen](./docs/release_page_generator.drawio.png)
@@ -20,31 +22,36 @@ use python requests & bs4
 
 auto-updates every 30 mins
 
+---
 ### Cloudwatch Alerter
 
 ![rk-alerter](./docs/rk_sqs_alerter.drawio.png)
 
+---
 ### Terraform PR Enforcer
 
 ![rk-pr-enforcer](./docs/rk_terraform_pr_enforcer.drawio.png)
 
-
+---
 ### Terraform Module Manger
 TBD
 
+---
 ### ECR Security Scanner
 
 ![rk-alerter](./docs/rk_sqs_alerter.drawio.png)
 
+---
 ### Bamboo Permission Enforcer
 TBD
 
+---
 ### Grafana visualiser
 
 ![rk-grafana](./docs/rk_grafana.drawio.png)
 
 
-
+---
 ### EC2 Tag Enforcer
 TBD
 
