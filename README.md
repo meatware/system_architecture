@@ -9,9 +9,6 @@ The release-kraken suite of tools was developed for a variety of different tasks
 ---
 ### Release Page Generator
 
-![rk-page-gen](./docs/release_page_generator.drawio.png)
-https://github.com/drmonkeysee/ecs-scheduler = runs on cron
-
 runs a taskdef once only on a 30 min cron
 
 1. Pulls & filters this weeks JIRA releases from multiple dev teams
@@ -22,8 +19,24 @@ use python requests & bs4
 
 auto-updates every 30 mins
 
+![rk-page-gen](./docs/release_page_generator.drawio.png)
+https://github.com/drmonkeysee/ecs-scheduler = runs on cron
+
+
 ---
 ### Cloudwatch Alerter
+
+I created a Terraform remote module that has a variety of alert types configured. e.g.
+
+1. Lambda - error rate (%)
+2. Duration
+3. Memory
+4. API Gateway 4xx/5xx
+5. ECS Cluster (Memory & CPU)
+
+Various consumers could feed in the names of what they had created into the remote module so that alerts would be (re)provisioned for that resource every time it was (re)deployed.
+
+I also created an alert client that could send alerts to any arbitrary MS Teams channel. The client also created a graph depicting the error that triggered teh alert via the `GetMetricWidgetImage` API
 
 ![rk-alerter](./docs/rk_sqs_alerter.drawio.png)
 
@@ -70,6 +83,8 @@ TBD
 
 ---
 ### Grafana visualiser
+
+This service provides Grafana with AWS Cloudwatch as a data source. It is useful because specific AWS IAM permissions do not need to be created or maintained. The dashboards that can be created are much nicer than the ones CloudWatch provides and the service can also be across multiple AWS accounts.
 
 ![rk-grafana](./docs/rk_grafana.drawio.png)
 
