@@ -33,7 +33,8 @@ auto-updates every 30 mins
 TBD
 
 ### ECR Security Scanner
-TBD
+
+![rk-alerter](./docs/rk_sqs_alerter.drawio.png)
 
 ### Bamboo Permission Enforcer
 TBD
