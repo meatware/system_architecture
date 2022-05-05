@@ -36,7 +36,7 @@ I created a Terraform remote module that has a variety of alert types configured
 
 Various consumers could feed in the names of what they had created into the remote module so that alerts would be (re)provisioned for that resource every time it was (re)deployed.
 
-I also created an alert client that could send alerts to any arbitrary MS Teams channel. The client also created a graph depicting the error that triggered teh alert via the `GetMetricWidgetImage` API
+I also created an alert client that could send alerts to any arbitrary MS Teams channel. The client also created a graph depicting the error that triggered the alert via the `GetMetricWidgetImage` API
 
 ![rk-alerter](./docs/rk_sqs_alerter.drawio.png)
 
