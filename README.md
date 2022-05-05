@@ -52,6 +52,8 @@ Tests PR merges for errors:
 6. Ensures README.md files are created using terraform-docs
 7. Ensure consumers are using s3 backed remote state
 8. Ensures remote modules, terraform exe and aws providers are pinned to the correct semantic version.
+9. Can be easily extended to run other static analysis tools such as tflint, checkov 2.0, etc
+
 
 
 ![rk-pr-enforcer](./docs/rk_terraform_pr_enforcer.drawio.png)
