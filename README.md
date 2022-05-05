@@ -3,32 +3,32 @@
 ## Release-Kraken
 #### A Centralised Multi-purpose DevOps Monitoring & Automation Suite of Tools
 
-The release-kraken suite of tools was developed for a variety of different tasks and was used internally to improve IaC and the release process. Dockerised code was deployed to ECS to run as long running services or 'run-once' tasks.
+The release-kraken suite of tools was developed for a variety of different tasks and was used internally to improve IaC and the release process. Dockerised code was deployed to ECS to run as long running services or 'run-once' tasks. All code was deployed using Terraform.
 
 
 ---
 ### Release Page Generator
 
-runs a taskdef once only on a 30 min cron
+The company releases multiple new software versions from different Dev teams every Saturday. This app generates a rich release-page table in confluence by making API calls to JIRA, Bamboo and Confluence. Whilst this is an ostensibly simple application, it possessed additional features that made it indispensable for all the teams that helped with the release process. i.e. Developers, DevOps, Support, QA and Management.
 
-1. Pulls & filters this weeks JIRA releases from multiple dev teams
-2. Displays issues left to do in that release 2/8
-3. Consults data-store for mapped bamboo jobs for that particular release  - publishes the current version that is deployed to (UAT & PROD)
+1. App auto-updates the release table every 30 minutes, but preserves manually made Confluence edits in certain columns such as:
+    * QA Testing & Deploy notes - preserves text and rich media elements such as embedded pictures.
+    * CCB Production Change Ticket: place for JIRA ticket that details what the change is. After change is completed, the Confluence preview of the ticket is struck-through to indicate completion.
+    * Attached database sql files, etc
+2. Showed number of Dev tickets left to complete in release (6/12). (So we know if the release will make it prior to Thurs 1300 CCB release cut-off)
+3. Displays the version of the app number of Dev tickets left to complete in release. (will it make Thurs 1300 cut-off?)
+4. Displays release notes generated from Jira release version description
+5. Remembers and fills in which group is responsible for deploying the app. Usually Support or DevOps.
 
-use python requests & bs4
-
-auto-updates every 30 mins
 
 ![rk-page-gen](./docs/release_page_generator.drawio.png)
-https://github.com/drmonkeysee/ecs-scheduler = runs on cron
-
 
 ---
 ### Cloudwatch Alerter
 
 I created a Terraform remote module that has a variety of alert types configured. e.g.
 
-1. Lambda - error rate (%)
+1. Lambda - error rate %
 2. Duration
 3. Memory
 4. API Gateway 4xx/5xx
