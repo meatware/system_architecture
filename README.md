@@ -77,7 +77,7 @@ This app was written to highlight potential security issues with developer writt
 
 If this visibility was not provided it would be likely that app container versions would not be update and vital security patches would remain unapplied.
 
-![rk-alerter](./docs/rk_sqs_alerter.drawio.png)
+![rk-alerter](./docs/release_page_generator.drawio.png)
 
 ---
 ### Bamboo Permission Enforcer
