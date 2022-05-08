@@ -91,9 +91,4 @@ This service provides Grafana with AWS Cloudwatch as a data source. It is useful
 ![rk-grafana](./docs/rk_grafana.drawio.png)
 
 
----
-### EC2 Tag Enforcer
-TBD
-
-
 
