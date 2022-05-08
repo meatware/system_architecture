@@ -1,7 +1,7 @@
 # System Architecture Examples
 
 ## Release-Kraken Overview
-#### A Centralised Multi-purpose DevOps Monitoring & Automation Suite of Tools
+#### A Centralised Multi-purpose DevOps Suite of Tools for Automation & Monitoring
 
 The release-kraken suite of tools was developed for a variety of different tasks and is used internally to improve IaC and the release process. Dockerised code is deployed to ECS to run as long running services or 'run-once' tasks. All code is deployed using Terraform.
 
