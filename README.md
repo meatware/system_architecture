@@ -74,6 +74,8 @@ This application provides a management view on the state of multiple remote modu
 
 Data gathered is organised into tables and an alerts section, highlights issues that should be resolved sooner rather than later. This is useful because it allows DevOps to easily spot configuration drift and to ascertain when an infrastructure repository needs updating. Additionally, the creation of rich readme's enable people who are new to a code base get up to speed quickly.
 
+Note that tables in the DynamoDB database are also updated by RK-Terraform-PR-Enforcer after a PR is merged into master.
+
 ![rk-tf-module-manager](./docs/rk-terraform-module-manager.drawio.png)
 
 ---
